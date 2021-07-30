@@ -1,0 +1,139 @@
+@import '_styles';
+@import '_mailing';
+@import '_header';
+@import '_footer';
+
+// header 
+.header {
+	background: #333333;
+}
+// path
+.path {
+	&__menu {
+		display: flex;
+		padding: 171px 0 60px;
+		justify-content: center;
+		@media (max-width: 1150px) {
+			padding-top: 165px;
+		}
+		&-link {
+			font-family: $Gilr;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 150%;
+			color: #333333;
+			border-bottom: 1px solid #333;
+			padding-bottom: 3px;
+			&.active {
+				border: none;
+			}
+		}
+		& span {
+			padding: 0 15px;
+			font-family: $Gilr;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 150%;
+			color: #333333;
+			@media (max-width: 425px) {
+				padding: 0 7px;
+			}
+		}
+	}
+}
+// contact
+.contact {
+	&__title {
+		text-align: center;
+		margin-bottom: 40px;
+		font-family: $Gilr;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #333333;
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 0 0px 60px 0;
+		border-bottom: 1px solid #d6d6d6;
+		@media (min-width: 1151px) {
+			padding-right: 50px;
+		}
+		@media (max-width: 870px) {
+			justify-content: center;
+		}
+		@media (max-width: 580px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__block {
+		@media (max-width: 870px) {
+			width: 50%;
+			&:first-child {
+				margin-bottom: 40px;
+			}
+		}
+		@media (max-width: 580px) {
+			width: 100%;
+			&:not(:last-child) {
+				margin-bottom: 40px;
+			}
+		}
+		@media (min-width: 871px) {
+			&:not(:last-child) {
+				margin-right: 30px;
+			}	
+		}
+		&-title {
+			@media (max-width: 870px) {
+				text-align: center;
+			}
+			font-family: $Gilr;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 140%;
+			color: #333333;
+			padding-bottom: 25px;
+		}
+		&-info {
+			display: flex;
+			align-items: flex-start;
+			@media (max-width: 870px) {
+				justify-content: center;
+			}
+		}
+		&-cell {
+			padding-left: 15px;
+		}
+		&-text {
+			font-family: $Gilr;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 150%;
+			color: #333333;
+			&:first-child {
+				padding-bottom: 15px;
+			}
+		}
+	}
+}
+// map
+.map {
+	&__img {
+		margin: 60px 0 60px 0;
+		width: 100%;
+		@media (max-width: 768px) {
+			margin: 60px 0 0px 0;
+		}
+	}
+}
